@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url(https://db.onlinewebfonts.com/c/9d23cda2fd2a195a8467e0967debd4d3?family=Cera+Round+Pro);
+
+@font-face {
+  font-family: 'valencia';
+  src: url('../fonts/valencia_400-webfont.woff2') format('woff2'),
+       url('../fonts/valencia_400-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --back-color: #0F172A;
+  --action-color: #38BDF8;
+  --primary-color: #F6F9FF;
+  --secondary-color: #B7BDD8;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--back-color);
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+body::-webkit-scrollbar {
+  width: 8px;               /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: var(--back-color);        /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid var(--secondary-color);  /* creates padding around scroll thumb */
+}
+
+.stroke {
+  /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--action-color); */
+  -webkit-text-stroke: 1px var(--action-color);
+}
+
+/* for vertical text */
+.vertical-text {
+  writing-mode: vertical-rl;
+}
+
+/* for mobile menu trasition */
+.menu-bars {
+  cursor: pointer;
+}
+
+.menu-bars > .bars > span:first-child {
+  transform: scaleX(1);
+  transition: transform 300ms cubic-bezier(.64,.22,.36,.78) 700ms;
+}
+
+.menu-bars.is-open > .bars > span:first-child {
+  transform: scaleX(0);
+  transition: transform 300ms cubic-bezier(.64,.22,.36,.78);
+}
+
+.menu-bars > .bars > span:nth-child(3) {
+  width: 17px;
+  transition: width 300ms cubic-bezier(.64,.22,.36,.78) 700ms;
+}
+
+.menu-bars.is-open > .bars > span:nth-child(3) {
+  width: 0;
+  transition: width 300ms cubic-bezier(.64,.22,.36,.78);
+}
+
+.menu-bars > .bars > span:nth-child(2) {
+  transform: rotateZ(0deg);
+  transition: transform 300ms cubic-bezier(.64,.22,.36,.78);
+}
+
+.menu-bars.is-open > .bars > span:nth-child(2) {
+  transform: rotateZ(315deg);
+  transition: transform 300ms cubic-bezier(.64,.22,.36,.78) 700ms;
+}
+
+.menu-bars > .other-bar {
+  height: 0;
+  transform: rotateZ(0deg);
+  transition: height 300ms cubic-bezier(.64,.22,.36,.78) 400ms, transform 300ms cubic-bezier(.64,.22,.36,.78);
+}
+
+.menu-bars.is-open > .other-bar {
+  height: 30px;
+  transform: rotateZ(315deg);
+  transition: height 300ms cubic-bezier(.64,.22,.36,.78) 300ms, transform 300ms cubic-bezier(.64,.22,.36,.78) 700ms;
+}
+
+.menu-mobile {
+  transform: translateX(100vw);
+  transition: transform 550ms cubic-bezier(.64,.22,.14,.87);
+}
+
+.menu-mobile.is-open {
+  transform: translateX(0vw);
+  transition: transform 550ms cubic-bezier(.64,.22,.14,.87);
+}
+
+.mobile-links {
+  -moz-box-shadow: -30px 0px 20px -15px var(--back-color);
+  -webkit-box-shadow: -30px 0px 20px -15px var(--back-color);
+  box-shadow: -30px 0px 20px -15px var(--back-color);
+}
+/* mobile menu trasition end */
+
+/* for button design */
+.btn {
+  @apply px-5 py-[10px] border-[1px] border-solid border-action-color rounded text-action-color hover:bg-[#38BDF8] hover:text-primary-color hover:bg-opacity-30;
+  transition: background-color 600ms ease-in-out, color 600ms ease-in-out;
+}
+
+.btn:hover {
+  transition: background-color 600ms ease-in-out, color 600ms ease-in-out;
+}
+
+.links > li:hover {
+  color: var(--action-color)
+}
+
+/* for social media icons transition */
+.social-animation {
+  @apply transition duration-1000 ease-in-out hover:-translate-y-2 hover:scale-125 hover:stroke-action-color hover:stroke-2 hover:transition hover:duration-1000 hover:ease-in-out;
+}
+
+/* about page list marker */
+ul.frameworks > div > li::before {
+  content: url("/check-circle.svg");
+  margin-right: 12px;
+}
+
+/* card animations*/
+.card-image {
+  animation: reverse-card-slide 300ms linear 1 forwards;
+}
+
+.card:hover > .card-image {
+  animation: card-slide 300ms linear 1 forwards;
+}
+
+@keyframes card-slide {
+  0% {transform: translateX(0%);}
+  100% {transform: translateX(100%);}
+}
+
+@keyframes reverse-card-slide {
+  0% {transform: translateX(100%);}
+  100% {transform: translateX(0%);}
+}
+
+@keyframes slide-in {
+  0% {opacity: 0; transform: translateY(300px);}
+  100% {opacity: 1; transform: translateY(0px);}
+}
+
+@media screen and (min-width: 1024px) {
+  .card:nth-child(even) {
+    margin-right: auto;
+  }
+
+  .card:nth-child(odd) {
+    margin-left: auto;
+  }
+
+  .card:hover > div > .card-content {
+    animation: slide-in 700ms linear 300ms 1 forwards;
+  }
+}
+
+
