@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
-@import url(https://db.onlinewebfonts.com/c/9d23cda2fd2a195a8467e0967debd4d3?family=Cera+Round+Pro);
 
 @font-face {
   font-family: 'valencia';
@@ -39,7 +38,7 @@ a {
   box-sizing: border-box;
 }
 
-
+/* for scrollbar style */
 body::-webkit-scrollbar {
   width: 8px;               /* width of the entire scrollbar */
 }
@@ -52,6 +51,7 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid var(--secondary-color);  /* creates padding around scroll thumb */
 }
 
+/* for stroke text */
 .stroke {
   /* -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--action-color); */
@@ -121,9 +121,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .mobile-links {
-  -moz-box-shadow: -30px 0px 20px -15px var(--back-color);
-  -webkit-box-shadow: -30px 0px 20px -15px var(--back-color);
-  box-shadow: -30px 0px 20px -15px var(--back-color);
+  -moz-box-shadow: -20px 0px 20px -15px rgba(2,12,27,0.7);
+  -webkit-box-shadow: -20px 0px 20px -15px rgba(2,12,27,0.7);
+  box-shadow: -20px 0px 20px -15px rgba(2,12,27,0.7);
 }
 /* mobile menu trasition end */
 

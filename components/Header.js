@@ -49,7 +49,7 @@ const Header = () => {
                     document.querySelector(".menu-mobile").classList.remove("is-open");
                     document.querySelector("body").classList.remove("overflow-hidden");
                 }}>
-                    <div className="mobile-links w-[70%] h-screen bg-[#16213d] absolute top-0 bottom-0 right-0 md:hidden text-sm text-primary-color overflow-hidden">
+                    <div className="mobile-links w-[60%] h-screen bg-[#16213d] absolute top-0 bottom-0 right-0 md:hidden text-sm text-primary-color overflow-hidden">
                         <ul className="links mt-[40%] sm:mt-[25%] ml-[10%] text-sm text-primary-color">
                             <li><Link href="# "><a>Home</a></Link></li>
                             <li className="mt-[18px]"><Link href="#about"><a>About</a></Link></li>

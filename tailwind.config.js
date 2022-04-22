@@ -14,11 +14,12 @@ module.exports = {
             },
             fontFamily: {
                 valencia: ["valencia"],
-                // "cera-round-pro": ["cera-round-pro", "cera-round-pro-thin", "cera-round-pro-light", "cera-round-pro-medium", "cera-round-pro-bold", "cera-round-pro-black"],
-                "cera-round-pro": ["Cera Round Pro"],
                 "league-spartan": ['"League Spartan"', "sans-serif"],
                 quicksand: ["Quicksand", "sans-serif"],
                 bebas: ['"Bebas Neue"', "cursive"],
+            },
+            boxShadow: {
+                card: "1px 1px 4px 2px rgba(2,12,27,0.7)",
             },
         },
     },

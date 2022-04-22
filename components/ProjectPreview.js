@@ -5,7 +5,7 @@ const ProjectPreview = () => {
         <div id="project-preview" className="z-0 min-w-full min-h-screen flex justify-center items-center pt-20">
             <div className="w-full">
                 <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold stroke text-transparent text-center lg:mb-14">Projects</h1>
-                <div className="card relative z-0 w-full lg:w-[70%] min-h-fit my-7 sm:my-10 rounded-lg bg-back-color shadow-black shadow-md overflow-hidden">
+                <div className="card relative z-0 w-full lg:w-[70%] min-h-fit my-7 sm:my-10 rounded-lg bg-back-color shadow-card overflow-hidden">
                     <div className="m-[6%] z-10 relative">
                         <h1 className="text-primary-color text-2xl font-bold">Project Title</h1>
                         <p className="card-content lg:opacity-0 mt-2 lg:mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores quibusdam ducimus dolore unde doloremque. Dolore minima vel optio impedit voluptas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi magnam facere ipsam distinctio sit et placeat qui tenetur provident eligendi fugit corporis, doloribus nemo architecto, excepturi rem tempore reprehenderit! Sit?</p>
@@ -20,11 +20,11 @@ const ProjectPreview = () => {
                         </div>
                     </div>
                     <div className="card-image z-[5] w-full h-full absolute top-0 left-0 bg-cover">
-                        <Image loading="lazy" src="/project.png" alt="" layout="fill" objectFit="cover" quality={100}></Image>
+                        <Image src="/project.png" alt="" layout="fill" objectFit="cover" quality={100}></Image>
                         <div className="z[6] min-w-full min-h-full bg-[#0F172A] bg-opacity-80 absolute top-0 left-0"></div>
                     </div>
                 </div>
-                <div className="card relative z-0 w-full lg:w-[70%] min-h-fit my-7 sm:my-10 rounded-lg bg-back-color shadow-black shadow-md overflow-hidden">
+                <div className="card relative z-0 w-full lg:w-[70%] min-h-fit my-7 sm:my-10 rounded-lg bg-back-color shadow-card overflow-hidden">
                     <div className="m-[6%] z-10 relative">
                         <h1 className="text-primary-color text-2xl font-bold">Project Title</h1>
                         <p className="card-content lg:opacity-0 mt-2 lg:mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores quibusdam ducimus dolore unde doloremque. Dolore minima vel optio impedit voluptas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi magnam facere ipsam distinctio sit et placeat qui tenetur provident eligendi fugit corporis, doloribus nemo architecto, excepturi rem tempore reprehenderit! Sit?</p>
@@ -39,11 +39,11 @@ const ProjectPreview = () => {
                         </div>
                     </div>
                     <div className="card-image z-[5] w-full h-full absolute top-0 left-0 bg-cover">
-                        <Image loading="lazy" src="/project.png" alt="" layout="fill" objectFit="cover" quality={100}></Image>
+                        <Image src="/project.png" alt="" layout="fill" objectFit="cover" quality={100}></Image>
                         <div className="z[6] min-w-full min-h-full bg-[#0F172A] bg-opacity-80 absolute top-0 left-0"></div>
                     </div>
                 </div>
-                <div className="card relative z-0 w-full lg:w-[70%] min-h-fit my-7 sm:my-10 rounded-lg bg-back-color shadow-black shadow-md overflow-hidden">
+                <div className="card relative z-0 w-full lg:w-[70%] min-h-fit my-7 sm:my-10 rounded-lg bg-back-color shadow-card overflow-hidden">
                     <div className="m-[6%] z-10 relative">
                         <h1 className="text-primary-color text-2xl font-bold">Project Title</h1>
                         <p className="card-content lg:opacity-0 mt-2 lg:mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores quibusdam ducimus dolore unde doloremque. Dolore minima vel optio impedit voluptas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi magnam facere ipsam distinctio sit et placeat qui tenetur provident eligendi fugit corporis, doloribus nemo architecto, excepturi rem tempore reprehenderit! Sit?</p>
@@ -58,7 +58,7 @@ const ProjectPreview = () => {
                         </div>
                     </div>
                     <div className="card-image z-[5] w-full h-full absolute top-0 left-0 bg-cover">
-                        <Image loading="lazy" src="/project.png" alt="" layout="fill" objectFit="cover" quality={100}></Image>
+                        <Image src="/project.png" alt="" layout="fill" objectFit="cover" quality={100}></Image>
                         <div className="z[6] min-w-full min-h-full bg-[#0F172A] bg-opacity-80 absolute top-0 left-0"></div>
                     </div>
                 </div>
