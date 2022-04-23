@@ -20,6 +20,7 @@ module.exports = {
             },
             boxShadow: {
                 card: "1px 1px 4px 2px rgba(2,12,27,0.7)",
+                header: "0px 3px 10px 2px rgba(2,12,27,0.7)",
             },
         },
     },

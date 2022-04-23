@@ -110,14 +110,14 @@ body::-webkit-scrollbar-thumb {
   transition: height 300ms cubic-bezier(.64,.22,.36,.78) 300ms, transform 300ms cubic-bezier(.64,.22,.36,.78) 700ms;
 }
 
-.menu-mobile {
+.menu-mobile.visually-hidden {
   transform: translateX(100vw);
-  transition: transform 550ms cubic-bezier(.64,.22,.14,.87);
+  transition: all 550ms cubic-bezier(.64,.22,.14,.87);
 }
 
 .menu-mobile.is-open {
   transform: translateX(0vw);
-  transition: transform 550ms cubic-bezier(.64,.22,.14,.87);
+  transition: all 550ms cubic-bezier(.64,.22,.14,.87);
 }
 
 .mobile-links {
