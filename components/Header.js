@@ -1,8 +1,14 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 
 const Header = () => {
     const [lastScroll, setLastScroll] = useState(0);
+
+    const router = useRouter();
+    const pageReload = () => {
+        router.reload();
+    };
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
@@ -29,7 +35,7 @@ const Header = () => {
         <>
             <header className="z-10 w-[100%] sticky top-0 left-0 right-0 transition-all ease-in-out duration-300">
                 <nav className="flex justify-between items-center w-[100%] px-[6%] py-4 mt-6 text-primary-color bg-[#0F172A] bg-opacity-[0.95]">
-                    <a href="/" className="text-action-color z-20 text-4xl text-left font-quicksand font-bold">J.</a>
+                    <h1 className="logo cursor-pointer text-action-color z-20 text-4xl text-left font-quicksand font-bold" onClick={pageReload}>J.</h1>
                     <ul className="links hidden md:block overflow-hidden">
                         <li className="inline-block"><Link href="#"><a>Home</a></Link></li>
                         <li className="inline-block ml-14"><Link href="#about"><a>About</a></Link></li>
