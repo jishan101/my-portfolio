@@ -17,8 +17,8 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Header />
+            <Hero />
             <main className="mx-[6%] md:mx-[18%]">
-                <Hero />
                 <About />
                 <ProjectPreview />
                 <Contact />

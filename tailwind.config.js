@@ -22,6 +22,19 @@ module.exports = {
                 card: "1px 1px 4px 2px rgba(2,12,27,0.7)",
                 header: "0px 3px 10px 2px rgba(2,12,27,0.7)",
             },
+            animation: {
+                rotate: "rotate 7s 500ms linear infinite",
+            },
+            keyframes: {
+                rotate: {
+                    '0%': {
+                        transform: 'scale(0.5)',
+                    },
+                    '100%': {
+                        transform: 'scale(0.5) rotate(360deg)',
+                    },
+                },
+            },
         },
     },
     plugins: [],
