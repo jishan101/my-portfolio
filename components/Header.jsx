@@ -152,6 +152,11 @@ const Header = () => {
                 </Link>
               </li>
               <li className="mt-[18px]">
+                <Link href="/#skills">
+                  <a>Skills</a>
+                </Link>
+              </li>
+              <li className="mt-[18px]">
                 <Link href="/#project-preview">
                   <a>Projects</a>
                 </Link>
