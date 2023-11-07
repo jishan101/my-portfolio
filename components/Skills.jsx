@@ -4,7 +4,7 @@ import MySkills from "../utils/my-skills";
 const Skills = () => {
   return (
     <div
-      id="about"
+      id="skills"
       className="min-h-screen min-w-full flex justify-center items-center pt-20 sm:pt-10"
     >
       <div className="flex flex-col-reverse md:flex-row">
