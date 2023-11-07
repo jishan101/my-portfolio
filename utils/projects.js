@@ -1,4 +1,4 @@
-export const Projects = [
+const Projects = [
   {
     id: 1,
     title: "GoodFood",
@@ -19,3 +19,5 @@ export const Projects = [
     live: "/",
   },
 ];
+
+export default Projects;
