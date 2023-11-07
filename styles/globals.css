@@ -1,22 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
-
-@font-face {
-  font-family: 'valencia';
-  src: url('../fonts/valencia_400-webfont.woff2') format('woff2'),
-       url('../fonts/valencia_400-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+@font-face {
+  font-family: "valencia";
+  src: url("../public/fonts/valencia_400-webfont.woff2") format("woff2"),
+    url("../public/fonts/valencia_400-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
-  --back-color: #0F172A;
-  --action-color: #38BDF8;
-  --primary-color: #F6F9FF;
-  --secondary-color: #B7BDD8;
+  --back-color: #0f172a;
+  --action-color: #38bdf8;
+  --primary-color: #f6f9ff;
+  --secondary-color: #b7bdd8;
 }
 
 html,
@@ -40,15 +40,15 @@ a {
 
 /* for scrollbar style */
 body::-webkit-scrollbar {
-  width: 8px;               /* width of the entire scrollbar */
+  width: 8px; /* width of the entire scrollbar */
 }
 body::-webkit-scrollbar-track {
-  background: var(--back-color);        /* color of the tracking area */
+  background: var(--back-color); /* color of the tracking area */
 }
 body::-webkit-scrollbar-thumb {
-  background-color: var(--secondary-color);    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid var(--secondary-color);  /* creates padding around scroll thumb */
+  background-color: var(--secondary-color); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid var(--secondary-color); /* creates padding around scroll thumb */
 }
 
 /* for stroke text */
@@ -70,60 +70,62 @@ body::-webkit-scrollbar-thumb {
 
 .menu-bars > .bars > span:first-child {
   transform: scaleX(1);
-  transition: transform 300ms cubic-bezier(.64,.22,.36,.78) 700ms;
+  transition: transform 300ms cubic-bezier(0.64, 0.22, 0.36, 0.78) 700ms;
 }
 
 .menu-bars.is-open > .bars > span:first-child {
   transform: scaleX(0);
-  transition: transform 300ms cubic-bezier(.64,.22,.36,.78);
+  transition: transform 300ms cubic-bezier(0.64, 0.22, 0.36, 0.78);
 }
 
 .menu-bars > .bars > span:nth-child(3) {
   width: 17px;
-  transition: width 300ms cubic-bezier(.64,.22,.36,.78) 700ms;
+  transition: width 300ms cubic-bezier(0.64, 0.22, 0.36, 0.78) 700ms;
 }
 
 .menu-bars.is-open > .bars > span:nth-child(3) {
   width: 0;
-  transition: width 300ms cubic-bezier(.64,.22,.36,.78);
+  transition: width 300ms cubic-bezier(0.64, 0.22, 0.36, 0.78);
 }
 
 .menu-bars > .bars > span:nth-child(2) {
   transform: rotateZ(0deg);
-  transition: transform 300ms cubic-bezier(.64,.22,.36,.78);
+  transition: transform 300ms cubic-bezier(0.64, 0.22, 0.36, 0.78);
 }
 
 .menu-bars.is-open > .bars > span:nth-child(2) {
   transform: rotateZ(315deg);
-  transition: transform 300ms cubic-bezier(.64,.22,.36,.78) 700ms;
+  transition: transform 300ms cubic-bezier(0.64, 0.22, 0.36, 0.78) 700ms;
 }
 
 .menu-bars > .other-bar {
   height: 0;
   transform: rotateZ(0deg);
-  transition: height 300ms cubic-bezier(.64,.22,.36,.78) 400ms, transform 300ms cubic-bezier(.64,.22,.36,.78);
+  transition: height 300ms cubic-bezier(0.64, 0.22, 0.36, 0.78) 400ms,
+    transform 300ms cubic-bezier(0.64, 0.22, 0.36, 0.78);
 }
 
 .menu-bars.is-open > .other-bar {
   height: 30px;
   transform: rotateZ(315deg);
-  transition: height 300ms cubic-bezier(.64,.22,.36,.78) 300ms, transform 300ms cubic-bezier(.64,.22,.36,.78) 700ms;
+  transition: height 300ms cubic-bezier(0.64, 0.22, 0.36, 0.78) 300ms,
+    transform 300ms cubic-bezier(0.64, 0.22, 0.36, 0.78) 700ms;
 }
 
 .menu-mobile.visually-hidden {
   transform: translateX(100vw);
-  transition: all 550ms cubic-bezier(.64,.22,.14,.87);
+  transition: all 550ms cubic-bezier(0.64, 0.22, 0.14, 0.87);
 }
 
 .menu-mobile.is-open {
   transform: translateX(0vw);
-  transition: all 550ms cubic-bezier(.64,.22,.14,.87);
+  transition: all 550ms cubic-bezier(0.64, 0.22, 0.14, 0.87);
 }
 
 .mobile-links {
-  -moz-box-shadow: -20px 0px 20px -15px rgba(2,12,27,0.7);
-  -webkit-box-shadow: -20px 0px 20px -15px rgba(2,12,27,0.7);
-  box-shadow: -20px 0px 20px -15px rgba(2,12,27,0.7);
+  -moz-box-shadow: -20px 0px 20px -15px rgba(2, 12, 27, 0.7);
+  -webkit-box-shadow: -20px 0px 20px -15px rgba(2, 12, 27, 0.7);
+  box-shadow: -20px 0px 20px -15px rgba(2, 12, 27, 0.7);
 }
 /* mobile menu trasition end */
 
@@ -138,7 +140,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .links > li:hover {
-  color: var(--action-color)
+  color: var(--action-color);
 }
 
 /* for social media icons transition */
@@ -162,18 +164,32 @@ ul.frameworks > div > li::before {
 }
 
 @keyframes card-slide {
-  0% {transform: translateX(0%);}
-  100% {transform: translateX(100%);}
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 @keyframes reverse-card-slide {
-  0% {transform: translateX(100%);}
-  100% {transform: translateX(0%);}
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 @keyframes slide-in {
-  0% {opacity: 0; transform: translateY(300px);}
-  100% {opacity: 1; transform: translateY(0px);}
+  0% {
+    opacity: 0;
+    transform: translateY(300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -189,5 +205,3 @@ ul.frameworks > div > li::before {
     animation: slide-in 700ms linear 300ms 1 forwards;
   }
 }
-
-
