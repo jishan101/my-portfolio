@@ -48,6 +48,7 @@ const ProjectPreview = () => {
                 <Image
                   src={`/project-thumbnails/${project?.thumbnail}`}
                   alt={project?.title}
+                  priority={true}
                   layout="fill"
                   objectFit="cover"
                   quality={100}
