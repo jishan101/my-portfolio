@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Projects } from "../utils/projects";
+import Projects from "../utils/projects";
 
 const ProjectPreview = () => {
   return (
@@ -52,7 +52,7 @@ const ProjectPreview = () => {
                   layout="fill"
                   objectFit="cover"
                   quality={100}
-                ></Image>
+                />
                 <div className="z-[6] min-w-full min-h-full bg-[#0F172A] bg-opacity-80 absolute top-0 left-0"></div>
               </div>
             </div>

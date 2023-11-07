@@ -1,10 +1,7 @@
 import Image from "next/image";
-import { useState } from "react";
-import { Projects } from "../utils/projects";
+import Projects from "../utils/projects";
 
 const ProjectPreview = () => {
-  const [projects, setProjects] = useState(Projects);
-
   return (
     <div
       id="project-preview"
@@ -14,8 +11,8 @@ const ProjectPreview = () => {
         <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold stroke text-transparent text-center lg:mb-14">
           Projects
         </h1>
-        {!!projects?.length &&
-          projects?.map((project) => (
+        {!!Projects?.length &&
+          Projects?.map((project) => (
             <div
               key={project?.id}
               className="card relative z-0 w-full lg:w-[65%] min-h-[270px] my-7 sm:my-10 rounded-lg bg-back-color shadow-card overflow-hidden text-center"
