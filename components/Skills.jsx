@@ -8,12 +8,12 @@ const Skills = () => {
       className="min-h-screen min-w-full flex justify-center items-center pt-20 sm:pt-10"
     >
       <div className="flex flex-col-reverse md:flex-row">
-        <div className="mt-6 sm:mt-8 md:mt-0 grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-4">
+        <div className="mt-6 sm:mt-8 md:mt-0 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
           {!!MySkills?.length &&
             MySkills?.map((skill) => (
               <div
                 key={skill?.id}
-                className="card aspect-square w-20 bg-back-color shadow-card rounded flex flex-col gap-2 justify-center items-center"
+                className="card aspect-square w-24 bg-back-color shadow-card rounded flex flex-col gap-2 justify-center items-center"
               >
                 <div className="w-1/2">
                   <Image

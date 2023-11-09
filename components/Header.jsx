@@ -73,7 +73,7 @@ const Header = () => {
                 <a>Contact</a>
               </Link>
             </li>
-            <Link href="/irfanul_islam.pdf">
+            <Link href="/irfanul-islam.pdf">
               <a className="inline-block ml-14 btn">Resume</a>
             </Link>
           </ul>
@@ -166,7 +166,7 @@ const Header = () => {
                   <a>Contact</a>
                 </Link>
               </li>
-              <Link href="/irfanul_islam.pdf">
+              <Link href="/irfanul-islam.pdf">
                 <a className="inline-block mt-[25px] btn">Resume</a>
               </Link>
             </ul>

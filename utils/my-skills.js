@@ -31,39 +31,34 @@ const MySkills = [
   },
   {
     id: 7,
+    title: "Next.js",
+    icon: "next.png",
+  },
+  {
+    id: 8,
     title: "Tailwind",
     icon: "tailwind.png",
   },
   {
-    id: 8,
+    id: 9,
     title: "Angular",
     icon: "angular.png",
   },
   {
-    id: 9,
+    id: 10,
     title: "Node.js",
     icon: "node.png",
   },
   {
-    id: 10,
+    id: 11,
+    title: "Express.js",
+    icon: "express.png",
+  },
+  {
+    id: 12,
     title: "NestJS",
     icon: "nest.png",
   },
-  // {
-  //   id: 11,
-  //   title: "Portfolio",
-  //   icon: "portfolio.png",
-  // },
-  // {
-  //   id: 12,
-  //   title: "Portfolio",
-  //   icon: "portfolio.png",
-  // },
-  // {
-  //   id: 13,
-  //   title: "Portfolio",
-  //   icon: "portfolio.png",
-  // },
 ];
 
 export default MySkills;
