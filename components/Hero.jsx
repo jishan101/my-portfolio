@@ -6,7 +6,7 @@ const Hero = () => {
           Irfanul Islam
         </div>
         <div className="font-league-spartan font-bold text-action-color text-center text-[35px] sm:text-[54px] lg:text-[73px]">
-          Front-End Developer
+          Full Stack Developer
         </div>
       </div>
       <div className="hidden lg:block z-0 w-full h-full overflow-hidden absolute">
